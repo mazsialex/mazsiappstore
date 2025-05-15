@@ -1,13 +1,12 @@
 [
   {
-    "name": "Mazsi Kalandjai",
-    "icon": "https://<felhasználónév>.github.io/mazsiappstore/icons/kaland.png",
-    "file": "https://<felhasználónév>.github.io/mazsiappstore/games/kaland.vpk"
+    "name": "Minecraft Mazsi Edition",
+    "icon": "icons/minecraft.png",
+    "file": "games/minecraft.vpk"
   },
   {
-    "name": "Mazsi Zenelejátszó",
-    "icon": "https://<felhasználónév>.github.io/mazsiappstore/icons/zene.png",
-    "file": "https://<felhasználónév>.github.io/mazsiappstore/apps/zene.vpk"
+    "name": "TZZ – NineCoin Farmoló",
+    "icon": "icons/tzz.png",
+    "file": "games/tzz.vpk"
   }
 ]
-
