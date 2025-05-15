@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Minecraft Mazsi Edition",
+    "icon": "icons/minecraft.png",
+    "file": "games/minecraft.vpk"
+  },
+  {
+    "name": "TZZ – NineCoin Farmoló",
+    "icon": "icons/tzz.png",
+    "file": "games/tzz.vpk"
+  }
+]
