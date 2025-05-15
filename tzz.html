@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>TZZ – NineCoin Farmoló</title>
+  <style>
+    body { font-family: sans-serif; background: #111; color: white; text-align: center; padding: 30px; }
+    button { padding: 10px; font-size: 16px; margin: 10px; }
+    input { padding: 5px; }
+  </style>
+</head>
+<body>
+  <h1>TZZ – NineCoin Farmoló</h1>
+  <p id="points">Pontjaid: 0</p>
+  <p id="coins">MineCoin: 0</p>
+  <button onclick="claimDaily()">Napi 4000 pont</button>
+  <button onclick="redeem()">Beváltás 8000 pont → 40000 MineCoin</button>
+  <br><br>
+  <input id="admincode" placeholder="Admin kód">
+  <button onclick="checkAdmin()">Kód beírása</button>
+  <div id="adminPanel" style="display:none;">
+    <button onclick="addPoints()">+4000 pont (admin)</button>
+  </div>
+
+  <script>
+    let points = 0;
+    let coins = 0;
+    const adminPassword = "mazsiadmin2025";
+
+    function update() {
+      document.getElementById("points").textContent = "Pontjaid: " + points;
+      document.getElementById("coins").textContent = "MineCoin: " + coins;
+    }
+
+    function claimDaily() {
+      points += 4000;
+      update();
+    }
+
+    function redeem() {
+      if (points >= 8000) {
+        points -= 8000;
+        coins += 40000;
+        update();
+      } else {
+        alert("Nincs elég pontod!");
+      }
+    }
+
+    function checkAdmin() {
+      const code = document.getElementById("admincode").value;
+      if (code === adminPassword) {
+        document.getElementById("adminPanel").style.display = "block";
+      } else {
+        alert("Hibás admin kód!");
+      }
+    }
+
+    function addPoints() {
+      points += 4000;
+      update();
+    }
+
+    update();
+  </script>
+</body>
+</html>
