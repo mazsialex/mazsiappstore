@@ -1,1 +1,13 @@
+[
+  {
+    "name": "Mazsi Kalandjai",
+    "icon": "https://<felhasználónév>.github.io/mazsiappstore/icons/kaland.png",
+    "file": "https://<felhasználónév>.github.io/mazsiappstore/games/kaland.vpk"
+  },
+  {
+    "name": "Mazsi Zenelejátszó",
+    "icon": "https://<felhasználónév>.github.io/mazsiappstore/icons/zene.png",
+    "file": "https://<felhasználónév>.github.io/mazsiappstore/apps/zene.vpk"
+  }
+]
 
